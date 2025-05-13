@@ -79,6 +79,7 @@ fn setup(
             box_collider.clone(),
             RigidBody::Dynamic,
             Mass(100.0),
+            // children![],
         ))
         .id();
 
