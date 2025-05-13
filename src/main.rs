@@ -107,6 +107,12 @@ fn setup(
         MeshMaterial2d(material_handle.clone()),
         Transform::from_translation(Vec3::X * DISTANCE),
         Mass(100.0),
+        children![(
+            Name::new("debug child"),
+            // Mesh2d(box_handle.clone()),
+            // MeshMaterial2d(material_handle.clone()),
+            // Transform::from_translation(Vec3::Z * 10.0).with_scale(Vec2::splat(0.5).extend(0.0)),
+        )],
     ));
 }
 
